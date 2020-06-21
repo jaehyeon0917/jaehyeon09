@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Marvel World</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<style>
+		
+
+		@font-face { font-family: 'Arita-dotum-Medium'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff'); font-weight: normal; font-style: normal; }
+		.wrap{margin: auto; width: 1200px; }
+		h1{font-size: 115px; padding-bottom: 150px; text-align: center;}
+		h2{font-size: 60px; padding-bottom: 100px;}
+		p{font-family: 'Arita-dotum-Medium'; line-height: 35px; font-size: 18px;}
+		.start_p{text-align: center; width: 720px; margin: auto; 
+			padding-bottom: 150px;}
+		section{position: relative; }
+		li{list-style-type: none; width: 100px; height: 44px; display: inline-block; text-align: center; font-family: 'Arita-dotum-Medium';}
+		ul{text-align: center; padding-bottom: 100px;}
+		li a{text-decoration: none; color: black; font-weight: bold;}
+		li a:link, li a:hover, li a:active, li a:visited{display: block; text-decoration: none; color: black; font-weight: bold;}
+		li a:hover{background: black; color: white; }
+		footer{font-family: 'Arita-dotum-Medium';}
+
+
+		.tr{z-index: 997; position: absolute; animation: tr 10s infinite alternate ease; }
+		@keyframes tr{
+			from{left:10px;}
+			to{left:1200px; }}
+		.ho{z-index: 998; position: absolute; animation: hr 8s infinite alternate ease; }
+		@keyframes hr{
+			from{left:10px;}
+			to{left:1150px; }}
+		.glr{z-index: 998; position: absolute; animation: glr 8s infinite alternate ease; }
+		@keyframes glr{
+			from{left:10px;}
+			to{left:1200px; }}
+		.terr{z-index: 998; position: absolute; animation: terr 18s infinite alternate ease; }
+		@keyframes terr{
+			from{left:10px;}
+			to{left:1200px; }}
+		.arr{z-index: 990; position: absolute; animation: arr 10s infinite alternate ease; }
+		@keyframes arr{
+			from{left:1100px;}
+			to{left:-500px; }}
+		.wr{z-index: 990; position: absolute; animation: wr 8s infinite alternate ease; }
+		@keyframes wr{
+			from{left:10px;}
+			to{left:1100px; }}
+		.wrr{z-index: 990; position: absolute; animation: wrr 8s infinite alternate ease; }
+		@keyframes wrr{
+			from{left:1100px;}
+			to{left:-500px; }}
+		.wrrr{z-index: 990; position: absolute; animation: wrrr 8s infinite alternate ease; }
+		@keyframes wrrr{
+			from{top:10px;}
+			to{top:1500px; }}
+		.wwrrr{z-index: 990; position: absolute; animation: wwrrr 8s infinite alternate ease; right: 50px;}
+		@keyframes wwrrr{
+			from{top:1600px;}
+			to{top:10px; }}
+		.ging{z-index: 990; position: absolute; animation: gr 15s infinite alternate ease; }
+		@keyframes gr{
+			from{left:1000px;}
+			to{left:-400px; }}
+
+		.her{z-index: 990; position: absolute; animation: her 8s infinite alternate ease; }
+		@keyframes her{
+			from{top:10px;}
+			to{top:2300px; }}
+		.herr{z-index: 990; position: absolute; animation: herr 10s infinite alternate ease; }
+		@keyframes herr{
+			from{top:2300px;}
+			to{top:10px; }}
+
+		.onr{z-index: 990; position: absolute; animation: onr 20s infinite alternate ease; }
+		@keyframes onr{
+			from{left:1200px;}
+			to{left:10px; }}
+		.gur{z-index: 990; position: absolute; animation: gur 10s infinite alternate ease; top: 800px;}
+		@keyframes gur{
+			from{left:10px;}
+			to{left:1100px; }}
+		.guur{z-index: 990; position: absolute; animation: guur 10s infinite alternate ease; top: 800px;}
+		@keyframes guur{
+			from{left:1100px;}
+			to{left:-200px; }}
+		.tartanr{z-index: 990; position: absolute; animation: tttr 10s infinite alternate ease; top: 2000px; width: 300px; left: 100px; }
+		@keyframes tttr{
+			from{}
+			to{ transform: rotate(180deg);}}
+		.houndr{z-index: 990; position: absolute; animation: hour 7s infinite alternate ease; top: 1150px; width: 250px; right:-100px; }
+		@keyframes hour{
+			from{}
+			to{ transform: rotate(30deg);}}
+		.houndrr{z-index: 990; position: absolute; animation: hourr 7s infinite alternate ease; top:1500px; left: -200px; }
+		@keyframes hourr{
+			from{width: 200px;transform: rotate(250deg);}
+			to{ width: 500px; transform: rotate(-60deg);}}
+
+		.second {opacity: 0.3; filter: alpha(opacity=30);  width: 1000px; height: 50px; background-color: red;}
+		.trs{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: red; position: absolute; top: 2700px; }
+		.hos{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: black; position: absolute; top: 350px; }
+		.hoss{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: black; position: absolute; top: 1800px; }
+		.glss{opacity: 0.3; filter: alpha(opacity=30);  width:1200px; height: 50px; background-color: #5b4206; position: absolute; top: 1500px; right: 0px; }
+		.ters{opacity: 0.3; filter: alpha(opacity=30);  width: 700px; height: 50px; background-color: #116ea4; position: absolute; top: 500px; right: 0px; }
+		.terss{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: #116ea4; position: absolute; top: 1800px;  }
+		.ars{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: #d0913f; position: absolute; top: 1500px;  }
+		.gins{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: #111199; position: absolute; top: 800px;  }
+		.ons{opacity: 0.3; filter: alpha(opacity=30);  width: 1200px; height: 50px; background-color: #410909; position: absolute; top: 500px;  }
+		.hes{opacity: 0.3; filter: alpha(opacity=30);  width: 1000px; height: 50px; background-color: gray; position: absolute; top: 500px;  right: 0px; }
+		.gus{opacity: 0.3; filter: alpha(opacity=30);  width: 1000px; height: 50px; background-color: #590B0B; position: absolute; top: 500px;  right: 0px; }
+	
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<h1>Marvel World</h1>
+
+		<p class="start_p">
+			"마블에서 누가 가장 강력할까요? 사람들마다 의견이 다른데, 어떤 정보들이 있는지 살펴봅시다."
+
+	<nav>
+		<ul>
+			<li>
+				<a href="#ca">캡틴 아메리카</a>
+			</li>
+			<li>
+				<a href="#bp">블랙 펜서</a>
+			</li>
+			<li>
+				<a href="#sp">스파이더맨</a>
+			</li>
+		</ul>
+	</nav>
+	<section id="ca" style="height: 2100px'">
+		<h2 style="width: 450px; text-shadow: 3px 3px white;">캡틴 아메리카</h2>
+		<img class="ca" src="ca.01.jpg" width; 10000px; ">
+		<p style="width: 400px; top: 350px; left: 20px; position: absolute ; color: white;"> "헬리콥터를 맨손으로 세울 수 있을 정도의 강력한 힘을 가진 어벤져스의 리더 캡틴 아메리카."
+		</p>
+
+	<div>
+		
+		<img src="ca.02.jpg" width="600px;">
+		<p style="width: 400px; position: absolute; display:block; left: 700px; top: 1000px;">
+			캡틴 한 사람만 놓고 보면 충분히 강력한 히어로이다. 하지만 초인적인 힘을 가진 다른 히어로들에 비하면  조금 부족한 부분이 있다.
+		</p>
+		<p style="width: 400px; position: absolute; display:block; left: 850px; top: 1200px;">
+			캡틴 > 아이언맨	
+		</p>
+		<p style="width: 400px; position: absolute; display:block; left: 850px; top: 1300px;">
+			캡틴 < 토르
+		</p>
+	 </div>
+	</section>
+    <section id="bp" height: 1800px;">
+    	<h2 style="width: 450px; text-shadow: 3px 3px white;">블랙 펜서</h2>
+    	<img class="bp" src="bp.01.jpg" width; 12000px; ">
+    	<p style="width: 380px; top: 800px; left: 800px; position: absolute ; color: white;"> "와칸다의 왕 블랙펜서. 그는 수트의 방어력 외에도 기본적인 반사신경, 공격력이 엄청나다"
+		</p>
+
+	 <div>
+	 	
+	 	<img src="bp.02.jpg" width="600px;">
+	 	<p style="width: 420px; position: absolute; display:block; left: 700px; top: 1300px;">
+			비브라늄 슈트로 거의 모든 공격을 흡수할 수 있다. 하지만, 자연적인 능력을 사용하는 능력자들에겐 무력한 모습을 보인다. 하지만 인간계에선 충분히 강력하다!
+		</p>
+		<p style="width: 400px; position: absolute; display:block; left: 850px; top: 1500px;">
+			블랙펜서 > 캡틴
+		</p>
+		<p style="width: 400px; position: absolute; display:block; left: 850px; top: 1600px;">
+			블랙펜서 < 비젼
+	 </div>	
+	</section>
+	<section id="sp" height: 1800px;">
+		<h2 style="width: 450px; text-shadow: 3px 3px white;">스파이더맨</h2>
+      	<img class="sp" src="sp.01.jpg" width; 8000px; ">
+      	<p style="width: 420px; top: 650px; left: 350px; position: absolute ; color: white;"> "반사신경과 스피드는 탑 급인 스패이더맨. 새로 합류하면서 놀라운 수준의 강력함을 보여주었다."
+		</p>
+		<p style="width: 420px; position: absolute; display:block; left: 700px; top: 900px;">
+			새로운 무기를 장착하고 피터는 어벤져스로 합류했다. 그는 스파이더맨 홈커밍에서는 반토막난 여객선의 양쪽을 잡고 완력으로만 버텼을 만큼 힘도 대단하다. 
+		</p>
+		<p style="width: 400px; position: absolute; display:block; left: 850px; top: 1100px;">
+			스파이더맨 > 버키
+		</p>
+		<p style="width: 400px; position: absolute; display:block; left: 850px; top: 1200px;">
+			스파이더맨 < 캡틴
+	<div>
+		<img src="sp.02.png" width="600px;">
+
+	</div>	
+	</section>
+
+	<section style=" top: 300px; ">
+		<footer style="margin: auto; text-align: center; padding-bottom: 50px;"> copyright 2019286071 박재현 디지털 퍼블리싱</footer>
+		
+	</section>
+
+</body>
+</html>
